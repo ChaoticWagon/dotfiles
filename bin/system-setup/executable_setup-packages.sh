@@ -18,6 +18,7 @@ essentials=(
     "flameshot" # X screenshots
     "gcolor3" # Color picker
     "gnome-keyring" # Keyring
+    "icoutils" # Creating desktop files for Wine applications
     "jq" # Json processing
     "kitty" # Backup terminal
     "kvantum" # QT theme picker
@@ -52,8 +53,10 @@ essentials=(
     "vulkan-tools"
     "vdpauinfo"
     "wine-ge-custom" # Better Wine
+    "wine-mono" # Mono support for Wine
     "winetricks"
     "zip"
+    "zoxide" # cd on crack
 )
 amdcpu=( # https://wiki.archlinux.org/title/Ryzen
     "amd-ucode"
@@ -83,6 +86,7 @@ development=(
     "luarocks" # Neovim config editing
     "npm" # Installing Neovim plugins
     "pnpm" # Better than npm
+    "powershell" # W
     "rustup" # RUUUUST
     "visual-studio-code-bin" # Notepad+++
 )
