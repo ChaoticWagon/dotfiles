@@ -8,10 +8,12 @@ essentials=(
     "btrfs-assistant" # BTRFS management
     "btop" # Resource monitor
     "chezmoi" # Dotfile management
+    "compsize" # View BTRFS compression ratios
     "devtools" # Required to edit package files with paru
     "dex" # Autostart desktop files
     "dolphin" # File manager
     "dunst" # Notifications
+    "dust" # du on crack
     "eza" # ls on crack
     "fish" # Shell
     "firefox-developer-edition" # W browser
@@ -19,9 +21,10 @@ essentials=(
     "gcolor3" # Color picker
     "gnome-keyring" # Keyring
     "icoutils" # Creating desktop files for Wine applications
+    "iotop" # Disk monitor
     "jq" # Json processing
     "kitty" # Backup terminal
-    "kvantum" # QT theme picker
+    "kvantum" # QT6 theme picker
     "kwallet-pam" # Unlock wallet
     "kwalletmanager"
     "mkinitcpio" # Must be before the kernel
@@ -30,6 +33,7 @@ essentials=(
     "libva-utils"
     "neofetch"
     "neovim" # Editor
+    "neovide" # Editor but Rust
     "nerd-fonts-git" # Fonts
     "nomacs" # Image viewer
     "nvtop" # GPU resource monitor (works with AMD, Intel, and Nvidia)
@@ -39,7 +43,8 @@ essentials=(
     "paru" # AUR helper
     "pavucontrol" # Audio settings
     "polkit-kde-agent" # Authentication
-    "qt5ct" # QT theming
+    "qt6ct" # QT6 theming
+    "qt5ct" # QT5 theming
     "qt5-graphicaleffects" # SDDM theme stuff
     "qt5-svg" # More SDDM theme stuff
     "qt5-quickcontrols2" # Guess what? Even more SDDM theme stuff!
@@ -47,6 +52,7 @@ essentials=(
     "rofi-lbonn-wayland" # Rofi with Wayland support
     "rofi-calc" # Rofi calculator
     "sddm" # Display manager
+    "speech-dispatcher" # Used by Firefox and others for text-to-speech
     "starship" # Shell prompt
     "sweet-cursor-theme-git" # Cursor
     "ungoogled-chromium" # L browser
@@ -79,11 +85,17 @@ catppuccin=(
     "sddm-theme-catppuccin-git"
 )
 development=(
+    "docker"
+    "docker-buildx"
+    "docker-compose"
     "dotnet-sdk" # C#
     "github-cli" # Easy way to login to GitHub with Git
+    "git"
+    "git-lfs"
     "go" # Inferior to Rust
     "jetbrains-toolbox" # IntelliJ/Rider/CLion/Feet
     "luarocks" # Neovim config editing
+    "namcap" # Validating PKGBUILDs
     "npm" # Installing Neovim plugins
     "pnpm" # Better than npm
     "powershell" # W
@@ -99,6 +111,7 @@ gaming=(
     "steam-native-runtime"
     "proton-ge-custom" # Better Proton
     "protontricks-git"
+    "protonup-qt" # GUI for managing Proton versions
     "xone-dkms-git" # Xbox controllers
     "xone-dongle-firmware" # Wireless Xbox controller dongle
 )
@@ -142,6 +155,13 @@ hyprland=( # https://wiki.hyprland.org/Useful-Utilities/
     "xdg-desktop-portal-gtk"
     "xorg-xeyes" # Useful for debugging XWayland issues
 )
+insprill=( # Stuff I use that I doubt anyone else cares about
+    "authy"
+    "feishin-bin"
+    "thunderbird"
+    "unityhub"
+    "vesktop"
+)
 
 groups_list=(
     essentials
@@ -154,6 +174,7 @@ groups_list=(
     intelcpu
     nvidia
     hyprland
+    insprill
 )
 
 dry_run=false
