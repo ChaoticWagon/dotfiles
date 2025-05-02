@@ -19,7 +19,18 @@ local servers = {
   gopls = {},
   harper_ls = {},
   hyprls = {},
-  jdtls = {},
+  jdtls = {
+    settings = {
+      ["java"] = {
+        edit = {
+          validateAllOpenBuffersOnChanges = true,
+          smartSemicolonDetection = {
+            enabled = true,
+          }
+        }
+      }
+    }
+  },
   jsonls = {},
   lua_ls = {},
   marksman = {},
