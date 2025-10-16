@@ -30,17 +30,6 @@
 	rebase = true
 [diff]
 	wsErrorHighlight = all
-[merge]
-	tool = unityyamlmerge
-[mergetool]
-	keepBackup = false
-[mergetool "unityyamlmerge"]
-	trustExitCode = false
-{{ if ne .chezmoi.os "windows" }}
-	cmd = '/home/insprill/.local/share/Unity/Hub/Editor/2019.4.41f1/Editor/Data/Tools/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
-{{ else }}
-	cmd = 'C:/Program Files/Unity/Hub/Editor/2019.4.40f1/Editor/Data/Tools/UnityYAMLMerge.exe' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
-{{ end }}
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
