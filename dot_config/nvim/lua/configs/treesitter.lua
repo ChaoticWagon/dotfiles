@@ -70,6 +70,7 @@ return {
       "wgsl_bevy",
       "xml",
       "yaml",
+      "yuck",
     },
   },
 }
